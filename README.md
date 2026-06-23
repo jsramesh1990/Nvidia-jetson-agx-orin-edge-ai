@@ -16,7 +16,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 1. [Overview](#-overview)
 2. [System Architecture](#-system-architecture)
@@ -35,7 +35,7 @@
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 The **NVIDIA Jetson AGX Orin Edge AI System** is a comprehensive, production-ready solution for intelligent surveillance, workforce management, and real-time analytics at the edge. Built specifically for the NVIDIA Jetson AGX Orin platform, this system leverages the power of GPU-accelerated AI inference to deliver high-performance computer vision and machine learning capabilities in a compact, power-efficient form factor.
 
@@ -61,7 +61,7 @@ The **NVIDIA Jetson AGX Orin Edge AI System** is a comprehensive, production-rea
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ### High-Level Architecture
 
@@ -133,7 +133,7 @@ The **NVIDIA Jetson AGX Orin Edge AI System** is a comprehensive, production-rea
 
 ---
 
-## 📊 Block Diagram
+##  Block Diagram
 
 ### System Component Block Diagram
 
@@ -212,7 +212,7 @@ The **NVIDIA Jetson AGX Orin Edge AI System** is a comprehensive, production-rea
 
 ---
 
-## 🔄 Flow Diagrams
+##  Flow Diagrams
 
 ### 1. Main System Control Flow
 
@@ -556,7 +556,7 @@ The **NVIDIA Jetson AGX Orin Edge AI System** is a comprehensive, production-rea
 
 ---
 
-## ✨ Features
+##  Features
 
 ### Core Features
 
@@ -604,7 +604,7 @@ The **NVIDIA Jetson AGX Orin Edge AI System** is a comprehensive, production-rea
 
 ---
 
-## 🛠️ Hardware Requirements
+##  Hardware Requirements
 
 ### Minimum Requirements
 
@@ -660,7 +660,7 @@ The **NVIDIA Jetson AGX Orin Edge AI System** is a comprehensive, production-rea
 
 ---
 
-## 💻 Software Requirements
+##  Software Requirements
 
 ### System Dependencies
 
@@ -744,7 +744,7 @@ pytest-asyncio>=0.21.0        # Async Tests
 
 ---
 
-## 🔧 Installation
+##  Installation
 
 ### Quick Install
 
@@ -854,7 +854,7 @@ docker run --rm \
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Main Configuration (`/etc/edge_ai/config.yaml`)
 
@@ -915,7 +915,7 @@ notifications:
 
 ---
 
-## 🏃 Usage
+##  Usage
 
 ### Start the System
 
@@ -984,7 +984,7 @@ python3 scripts/benchmark.py
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 ### REST API Endpoints
 
@@ -1030,7 +1030,7 @@ python3 scripts/benchmark.py
 
 ---
 
-## 📊 Performance Metrics
+##  Performance Metrics
 
 ### Benchmark Results
 
@@ -1070,7 +1070,7 @@ python3 scripts/benchmark.py
 
 ---
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -1173,7 +1173,7 @@ sudo sqlite3 /var/edge_ai/attendance.db "DELETE FROM attendance;"
 
 ---
 
-## 🚀 Development
+##  Development
 
 ### Building from Source
 
@@ -1232,7 +1232,7 @@ perf report
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
 - **API Reference**: [docs/api.md](docs/api.md)
 - **Hardware Guide**: [docs/hardware.md](docs/hardware.md)
@@ -1243,7 +1243,7 @@ perf report
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Please follow these steps:
 
@@ -1264,39 +1264,39 @@ We welcome contributions! Please follow these steps:
 
 ---
 
-## 📈 Roadmap
+##  Roadmap
 
 ### Version 1.0.0 (Current)
-- ✅ Face Detection & Recognition
-- ✅ Voice Authentication
-- ✅ Human Detection
-- ✅ Person Tracking
-- ✅ Attendance Management
-- ✅ Visitor Management
-- ✅ Surveillance
-- ✅ Hardware Drivers (GPIO, SPI, UART, I2C)
-- ✅ Communication (MQTT, WebSocket, REST)
-- ✅ Data Management (SQLite, File System)
-- ✅ Dashboard (Web UI)
-- ✅ Mobile App (React Native)
+-  Face Detection & Recognition
+-  Voice Authentication
+-  Human Detection
+-  Person Tracking
+-  Attendance Management
+-  Visitor Management
+-  Surveillance
+-  Hardware Drivers (GPIO, SPI, UART, I2C)
+-  Communication (MQTT, WebSocket, REST)
+-  Data Management (SQLite, File System)
+-  Dashboard (Web UI)
+-  Mobile App (React Native)
 
 ### Version 1.1.0 (Planned)
-- 🔄 Cloud Integration
-- 🔄 Multi-camera Support
-- 🔄 Advanced Analytics
-- 🔄 ML Model Auto-update
-- 🔄 Edge-to-Cloud Sync
+-  Cloud Integration
+-  Multi-camera Support
+-  Advanced Analytics
+-  ML Model Auto-update
+-  Edge-to-Cloud Sync
 
 ### Version 2.0.0 (Future)
-- 🔄 Federated Learning
-- 🔄 Blockchain Integration
-- 🔄 5G Connectivity
-- 🔄 Advanced AI Models
-- 🔄 Autonomous Decision Making
+-  Federated Learning
+-  Blockchain Integration
+-  5G Connectivity
+-  Advanced AI Models
+-  Autonomous Decision Making
 
 ---
 
-## 📊 System Statistics
+##  System Statistics
 
 ### Architecture Overview
 
@@ -1328,7 +1328,7 @@ Total       │  325  │ 88,000│ 15,300   │   85%
 
 ---
 
-## 🔒 Security
+##  Security
 
 ### Security Features
 
@@ -1350,7 +1350,7 @@ Total       │  325  │ 88,000│ 15,300   │   85%
 
 ---
 
-## 💡 Tips & Tricks
+##  Tips & Tricks
 
 ### Performance Optimization
 
@@ -1370,7 +1370,7 @@ Total       │  325  │ 88,000│ 15,300   │   85%
 
 ---
 
-## 📞 Quick Reference
+##  Quick Reference
 
 ### Important Commands
 
@@ -1410,7 +1410,7 @@ sudo systemctl start edge_ai.service
 
 ---
 
-## 📝 Changelog
+##  Changelog
 
 ### v1.0.0 (2026-06-23)
 - Initial release
@@ -1433,7 +1433,7 @@ sudo systemctl start edge_ai.service
 
 ---
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 - **NVIDIA**: For Jetson AGX Orin and JetPack
 - **OpenCV Community**: For computer vision libraries
@@ -1442,7 +1442,7 @@ sudo systemctl start edge_ai.service
 
 ---
 
-## 🏷️ Tags
+##  Tags
 
 `edge-ai` `jetson-agx-orin` `face-recognition` `computer-vision` `ai-inference` `tensorrt` `gpu-accelerated` `surveillance` `attendance-system` `iot` `mqtt` `websocket` `rest-api` `c++` `python`
 
