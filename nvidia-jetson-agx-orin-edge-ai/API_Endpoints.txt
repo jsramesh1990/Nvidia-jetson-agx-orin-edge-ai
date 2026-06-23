@@ -1,0 +1,7 @@
+http://localhost:8000/api/attendance - Attendance records
+
+http://localhost:8000/api/employees - Employee management
+
+http://localhost:8000/api/visitors - Visitor logs
+
+http://localhost:8000/dashboard - Web dashboard

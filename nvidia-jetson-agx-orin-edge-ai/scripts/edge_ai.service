@@ -1,0 +1,23 @@
+[Unit]
+Description=Edge AI System for NVIDIA Jetson AGX Orin
+After=network.target mosquitto.service
+
+[Service]
+Type=simple
+User=edgeai
+Group=edgeai
+WorkingDirectory=/opt/edge_ai
+ExecStart=/usr/local/bin/edge_ai_app --config /etc/edge_ai/config.yaml
+ExecStop=/bin/kill -SIGTERM $MAINPID
+Restart=on-failure
+RestartSec=10
+LimitNOFILE=65536
+
+# Security
+ProtectSystem=strict
+ReadWritePaths=/var/edge_ai
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

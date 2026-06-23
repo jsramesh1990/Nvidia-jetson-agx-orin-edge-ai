@@ -1,0 +1,40 @@
+# Face recognition database configuration
+faces:
+  employees:
+    - id: "EMP001"
+      name: "John Doe"
+      department: "Engineering"
+      position: "Senior Developer"
+      email: "john.doe@example.com"
+      phone: "+1234567890"
+      face_images: ["john_doe_1.jpg", "john_doe_2.jpg"]
+    
+    - id: "EMP002"
+      name: "Jane Smith"
+      department: "HR"
+      position: "HR Manager"
+      email: "jane.smith@example.com"
+      phone: "+1234567891"
+      face_images: ["jane_smith_1.jpg"]
+    
+    - id: "EMP003"
+      name: "Bob Johnson"
+      department: "Finance"
+      position: "Accountant"
+      email: "bob.johnson@example.com"
+      phone: "+1234567892"
+      face_images: ["bob_johnson_1.jpg"]
+
+  visitors:
+    - id: "VIS001"
+      name: "Alice Brown"
+      company: "Acme Corp"
+      purpose: "Business Meeting"
+      host: "EMP001"
+      valid_until: "2026-06-30"
+
+  blacklist:
+    - id: "BL001"
+      name: "Eve Wilson"
+      reason: "Security violation"
+      date_added: "2026-06-01"

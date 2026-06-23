@@ -1,0 +1,146 @@
+# Edge AI System Configuration
+system:
+  name: "NVIDIA Jetson AGX Orin Edge AI System"
+  version: "1.0.0"
+  log_level: "INFO"
+  debug: false
+
+# Camera Configuration
+camera:
+  type: "csi"  # csi, usb, ip
+  device: "/dev/video0"
+  width: 1920
+  height: 1080
+  fps: 30
+  pipeline: "nvarguscamerasrc"
+  exposure: -1  # -1 = auto
+  white_balance: -1  # -1 = auto
+  brightness: 50
+  contrast: 50
+  saturation: 50
+  sharpness: 50
+
+# AI Models
+ai:
+  face_detection:
+    model: "/etc/edge_ai/models/face_detection.engine"
+    confidence_threshold: 0.6
+    input_width: 320
+    input_height: 320
+    max_faces: 10
+  
+  face_recognition:
+    model: "/etc/edge_ai/models/face_recognition.engine"
+    embedding_size: 512
+    recognition_threshold: 0.7
+    database: "/var/edge_ai/data/faces.db"
+  
+  voice_auth:
+    model: "/etc/edge_ai/models/voice_auth.engine"
+    sample_rate: 16000
+    duration_ms: 3000
+    threshold: 0.75
+  
+  human_detection:
+    model: "/etc/edge_ai/models/human_detection.engine"
+    confidence_threshold: 0.5
+    nms_threshold: 0.4
+  
+  person_tracking:
+    max_tracks: 100
+    track_confidence: 0.5
+    lost_timeout: 30  # seconds
+
+# Drivers
+drivers:
+  gpio:
+    pins:
+      attendance_led: 17
+      alert_led: 18
+      buzzer: 19
+      door_lock: 20
+  
+  spi:
+    bus: 0
+    speed: 1000000
+    mode: 0
+  
+  uart:
+    device: "/dev/ttyTHS1"
+    baudrate: 115200
+    data_bits: 8
+    parity: "none"
+    stop_bits: 1
+  
+  i2c:
+    bus: 1
+    speed: 100000
+    smbus: true
+
+# Communication
+communication:
+  mqtt:
+    broker: "localhost"
+    port: 1883
+    client_id: "edge_ai_system"
+    username: ""
+    password: ""
+    topics:
+      attendance: "edge_ai/attendance"
+      alerts: "edge_ai/alerts"
+      status: "edge_ai/status"
+  
+  websocket:
+    port: 8080
+    max_clients: 100
+  
+  rest_api:
+    port: 8000
+    host: "0.0.0.0"
+    workers: 4
+
+# Database
+database:
+  path: "/var/edge_ai/attendance.db"
+  pool_size: 10
+  backup_interval: 3600  # seconds
+
+# Storage
+storage:
+  root_path: "/var/edge_ai/data"
+  temp_path: "/tmp/edge_ai"
+  backup_path: "/var/backups/edge_ai"
+  max_size_gb: 100
+  auto_cleanup: true
+  compression_enabled: true
+
+# Notifications
+notifications:
+  email:
+    enabled: false
+    smtp_host: "smtp.gmail.com"
+    smtp_port: 587
+    from_email: "alerts@edge-ai.example.com"
+    username: ""
+    password: ""
+  
+  sms:
+    enabled: false
+    provider: "twilio"
+    account_sid: ""
+    auth_token: ""
+    from_number: ""
+
+# Performance
+performance:
+  enable_benchmark: false
+  log_performance: true
+  benchmark_interval: 3600  # seconds
+
+# Security
+security:
+  enable_encryption: false
+  enable_authentication: true
+  jwt_secret: "change_this_in_production"
+  jwt_expiry: 86400  # seconds
+  rate_limit: 100  # requests per minute

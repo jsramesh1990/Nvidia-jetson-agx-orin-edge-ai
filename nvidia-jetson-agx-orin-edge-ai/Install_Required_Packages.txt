@@ -1,0 +1,8 @@
+# Install JSON library
+sudo apt-get install nlohmann-json3-dev
+
+# Install YAML-CPP
+sudo apt-get install libyaml-cpp-dev
+
+# Install TinyXML2
+sudo apt-get install libtinyxml2-dev

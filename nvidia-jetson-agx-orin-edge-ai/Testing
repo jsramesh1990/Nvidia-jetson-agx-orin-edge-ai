@@ -1,0 +1,8 @@
+# Run unit tests
+python3 -m pytest tests/
+
+# Run integration tests
+python3 tests/integration/test_full_pipeline.py
+
+# Performance benchmark
+python3 scripts/benchmark.py --device jetson-agx-orin

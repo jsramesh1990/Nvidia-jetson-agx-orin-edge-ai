@@ -1,0 +1,15 @@
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make -j$(nproc)
+sudo make install
+
+
+Install dependencies: pip install -r requirements.txt
+
+Build the project: mkdir build && cd build && cmake .. && make
+
+Download models and place them in /etc/edge_ai/models/
+
+Initialize database: sqlite3 /var/edge_ai/attendance.db < scripts/init_database.sql
+
+Start the system: ./build/edge_ai_app

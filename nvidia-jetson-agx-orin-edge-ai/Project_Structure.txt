@@ -1,0 +1,79 @@
+nvidia-jetson-agx-orin-edge-ai/
+
+├── ai/
+│
+│   ├── face_detection/
+│   │
+│   ├── face_recognition/
+│   │
+│   ├── voice_auth/
+│   │
+│   ├── human_detection/
+│   │
+│   ├── person_tracking/
+│   │
+│   ├── attendance/
+│   │
+│   ├── visitor/
+│   │
+│   └── surveillance/
+│
+├── drivers/
+│
+│   ├── camera/
+│   │
+│   ├── microphone/
+│   │
+│   ├── gpio/
+│   │
+│   └── storage/
+│
+├── communication/
+│
+│   ├── mqtt/
+│   │
+│   ├── tcp/
+│   │
+│   ├── websocket/
+│   │
+│   └── rest_client/
+│
+├── backend/
+│
+│   ├── api/
+│   │
+│   ├── payroll/
+│   │
+│   ├── analytics/
+│   │
+│   ├── database/
+│   │
+│   ├── auth/
+│   │
+│   └── notifications/
+│
+├── dashboard/
+│
+├── mobile/
+│
+├── configs/
+│
+├── data/
+│
+├── docs/
+│
+├── scripts/
+│
+├── tests/
+│
+├── third_party/
+│
+├── build/
+│
+├── CMakeLists.txt
+│
+├── README.md
+│
+├── LICENSE
+│
+└── .gitignore

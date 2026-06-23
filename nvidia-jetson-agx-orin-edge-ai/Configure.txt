@@ -1,0 +1,9 @@
+# Copy configuration files
+cp -r configs/* /etc/edge_ai/
+
+# Setup database
+sqlite3 /var/edge_ai/attendance.db < scripts/init_database.sql
+
+# Start services
+sudo systemctl enable edge_ai.service
+sudo systemctl start edge_ai.service

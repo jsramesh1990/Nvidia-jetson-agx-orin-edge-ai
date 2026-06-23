@@ -1,0 +1,8 @@
+# Start the system
+./build/edge_ai_app --config /etc/edge_ai/config.yaml
+
+# Run face enrollment
+python3 scripts/enroll_face.py --user "John Doe" --id EMP001
+
+# Test detection
+python3 scripts/test_camera.py --device /dev/video0
